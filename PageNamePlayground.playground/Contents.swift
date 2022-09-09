@@ -1,13 +1,14 @@
 import UIKit
 //typealias PageName =  [PageNamePart]
 
-let sdkSettings: String = "khx"
+let sdkSettings: String = "khx"// We could make this part of SDK settings
 
 enum PageNamePart {
     case prefix
     case section(String)
 }
 
+// This would live in our generic SDK library and pull from settings for the .prefix value
 extension PageNamePart {
     var value: String {
         switch self{
