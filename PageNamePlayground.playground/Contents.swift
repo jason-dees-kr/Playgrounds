@@ -1,5 +1,67 @@
-import UIKit
-//typealias PageName =  [PageNamePart]
+
+var pageName:PageName = .Prefix + "home" // khx:home
+pageName += .section("coupons") // khx:home:coupons
+
+var p = String(describing: pageName) // "khx:home:coupons"
+
+pageName.pop() // "coupons"
+
+//PageName.Prefix.pop() // Doesn't work luckily
+
+var p2 = String(describing: pageName) // "khx:home"
+
+PageName.Prefix // khx
+
+//Sample app use
+let first = FirstViewController()
+first.pageName
+let fakeController = FakeViewController()
+first.present(fakeController, animated: false)
+fakeController.pageName
+
+// Can I add page names based on the view stack?
+
+class AnalyticsViewController { // : UIViewController {
+    var pageName: PageName {
+        get{
+            let selfType = type(of: self)
+            return PageName.Prefix + String(describing: selfType) // is this a good default?
+        }
+        set(newPageName) {
+            
+        }
+    }
+    
+    func present(_ viewControllerToPresent: AnalyticsViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+        viewControllerToPresent.pageName = self.pageName + viewControllerToPresent.pageName
+        viewControllerToPresent.pageName
+    }
+}
+
+class FirstViewController: AnalyticsViewController {
+    var _pageName: PageName = PageName.Prefix + PageName("home")
+    override var pageName: PageName {
+        get {
+            return _pageName
+        }
+        set(newPageName) {
+        }
+    }
+}
+
+class FakeViewController: AnalyticsViewController {
+    var _pageName: PageName = PageName("next")
+    override var pageName: PageName {
+        get {
+            return _pageName
+        }
+        set(newPageName) {
+            _pageName = newPageName
+        }
+    }
+}
+
+// Implementation
 
 let sdkSettings: String = "khx"// We could make this part of SDK settings
 
@@ -99,68 +161,5 @@ extension PageName {
         var lhs = PageName(lhs)
         lhs.append(rhs)
         return lhs
-    }
-}
-
-var pageName:PageName = .Prefix + "home" // khx:home
-pageName += .section("coupons") // khx:home:coupons
-
-var p = String(describing: pageName) // "khx:home:coupons"
-
-pageName.pop() // "coupons"
-
-//PageName.Prefix.pop() // Doesn't work luckily
-
-var p2 = String(describing: pageName) // "khx:home"
-
-PageName.Prefix // khx
-
-//Sample app use
-let first = FirstViewController()
-first.pageName
-let fakeController = FakeViewController()
-first.present(fakeController, animated: false)
-fakeController.pageName
-
-// Can I add page names based on the view stack?
-
-class AnalyticsViewController { // : UIViewController {
-    var pageName: PageName {
-        get{
-            let selfType = type(of: self)
-            return PageName.Prefix + String(describing: selfType) // is this a good default?
-        }
-        set(newPageName) {
-            
-        }
-    }
-    
-    func present(_ viewControllerToPresent: AnalyticsViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-        viewControllerToPresent.pageName = self.pageName + viewControllerToPresent.pageName
-        viewControllerToPresent.pageName
-    }
-}
-
-class FirstViewController: AnalyticsViewController {
-    var _pageName: PageName = PageName.Prefix + PageName("First")
-    override var pageName: PageName {
-        get {
-            return _pageName
-        }
-        set(newPageName) {
-        }
-    }
-}
-
-
-class FakeViewController: AnalyticsViewController {
-    var _pageName: PageName = PageName("Fake")
-    override var pageName: PageName {
-        get {
-            return _pageName
-        }
-        set(newPageName) {
-            _pageName = newPageName
-        }
     }
 }
