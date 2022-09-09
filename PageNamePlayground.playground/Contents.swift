@@ -74,3 +74,7 @@ extension PageName {
 let pageName:PageName = .Prefix + "home" + .section("coupons")
 
 var p = String(describing: pageName)
+
+pageName.pop()
+
+var p2 = String(describing: pageName)
