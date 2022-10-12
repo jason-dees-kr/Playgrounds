@@ -1,6 +1,8 @@
-// Implementation
 import PageNamePlayground_Sources
 
+let _ = SDKSettings(appRoot: "khx")
+
+// PageName.Prefix 
 var pageName: PageName = PageName.Prefix + "home" // khx:home
 pageName += PageNamePart.section("coupons") // khx:home:coupons
 
@@ -17,8 +19,8 @@ var p2 = String(describing: pageName) // "khx:home"
 
 PageName.Prefix // khx
 
+//25th century ideas below
 // Can I add page names based on the view stack?
-
 
 //Sample app use
 let home = HomeViewController()

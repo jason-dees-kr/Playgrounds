@@ -1,7 +1,14 @@
 import Foundation
 
-
-let sdkSettings: String = "khx"// We could make this part of SDK settings
+public struct SDKSettings {
+    public let appRoot: String
+    public init(appRoot: String){
+        self.appRoot = appRoot
+        SDKSettings.Shared = self
+    }
+    
+    public static private(set) var  Shared: SDKSettings?
+}
 
 public enum PageNamePart {
     case prefix
@@ -13,7 +20,7 @@ extension PageNamePart {
     var value: String {
         switch self{
         case .prefix:
-            return sdkSettings
+            return PageNamePart.section(SDKSettings.Shared?.appRoot ?? "No SDK Settings found").value // This would be a singleton, which I do not like.
         case let .section(v):
             var v = v
             v.replace(" ", with: "-")
