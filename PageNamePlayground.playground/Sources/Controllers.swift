@@ -32,7 +32,7 @@ public struct StartNavigate {
 public class HomeViewController: AnalyticsViewController {
     public override var pageName: PageName {
         get {
-            return .Prefix + .section("home")
+            return PageName("home")
         }
         set(newPageName) {
         }
@@ -49,7 +49,7 @@ public class HomeViewController: AnalyticsViewController {
 public class ListViewController: AnalyticsViewController {
     public override var pageName: PageName {
         get {
-            return .Prefix + .section("list")
+            return PageName("list")
         }
         set(newPageName) {
         }
@@ -93,7 +93,7 @@ public class ProductsViewController: AnalyticsViewController {
 
     public override var pageName: PageName {
         get {
-            return .Prefix + departmentName + "products"
+            return PageName(departmentName, "products")
         }
         set(newPageName) {        }
     }

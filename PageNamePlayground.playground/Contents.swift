@@ -1,21 +1,26 @@
 import PageNamePlayground_Sources
 
-let _ = SDKSettings(appRoot: "khx")
+let _ = SDKSettings(appRoot: "khx") // among other settings
 
-// PageName.Prefix 
-var pageName: PageName = PageName.Prefix + "home" // khx:home
-pageName += PageNamePart.section("coupons") // khx:home:coupons
+// PageName.Prefix
+var pageName: PageName = PageName("home") // khx:home
+pageName += "coupons" // khx:home:coupons
 
 
 var p = String(describing: pageName) // "khx:home:coupons"
 
 pageName.pop() // "coupons"
 
-pageName = PageName("health", "activity center")
+pageName = PageName("health", "activity center") // "khx:home:activity-center"
+// could do other string processing
+pageName += "steps" // "khx:home:activity-center:steps"
 
 //PageName.Prefix.pop() // Doesn't work luckily
+pageName = PageName() // khx
+pageName += "step counter" // khx:step-counter
+pageName += PageName.Prefix // khx:step-counter
 
-var p2 = String(describing: pageName) // "khx:home"
+var p2 = String(describing: pageName) // "khx:home:activity-center"
 
 PageName.Prefix // khx
 

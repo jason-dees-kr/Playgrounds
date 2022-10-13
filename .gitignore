@@ -2,3 +2,4 @@
 *.xcuserstate
 *.xcworkspacedata
 .DS_Store
+*.js
