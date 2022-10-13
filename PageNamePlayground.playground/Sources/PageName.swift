@@ -61,12 +61,15 @@ extension PageName: CustomStringConvertible {
     }
 }
 
-extension PageName {
+extension PageName: Encodable {
     
-    public static var Prefix: PageName {
-        PageName()
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(self.description)
     }
-    
+}
+
+extension PageName {
     public static func +=(lhs: inout PageName, rhs: PageName) -> PageName {
         lhs.append(rhs)
         return lhs

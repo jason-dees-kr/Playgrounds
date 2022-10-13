@@ -7,7 +7,7 @@ public class AnalyticsViewController { // : UIViewController {
     public var pageName: PageName {
         get{
             let selfType = type(of: self)
-            return PageName.Prefix + String(describing: selfType) // is this a good default?
+            return PageName(String(describing: selfType)) // is this a good default?
         }
         set(newPageName) {
             
