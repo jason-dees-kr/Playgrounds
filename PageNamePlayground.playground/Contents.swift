@@ -23,6 +23,9 @@ var p2 = String(describing: pageName) // "khx:home:activity-center"
 
 var d = try JSONEncoder().encode(pageName)
 print(String(decoding: d, as: UTF8.self))
+let startNavigate = StartNavigate(componentName: "home page", destination: nil, itemIndex: 5, pageName: pageName)
+d = try JSONEncoder().encode(startNavigate)
+print(String(decoding: d, as: UTF8.self))
 
 //25th century ideas below
 // Can I add page names based on the view stack?

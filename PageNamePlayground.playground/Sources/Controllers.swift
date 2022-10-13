@@ -25,7 +25,7 @@ public class AnalyticsViewController { // : UIViewController {
     }
 }
 
-public struct StartNavigate {
+public struct FakeStartNavigate {
     let pageName: PageName
 }
 
@@ -39,7 +39,7 @@ public class HomeViewController: AnalyticsViewController {
     }
     
     public func goToList() -> ListViewController {
-        let _ = StartNavigate(pageName: self.pageName)
+        let _ = FakeStartNavigate(pageName: self.pageName)
         let listViewController = ListViewController()
         present(listViewController, animated: false)
         return listViewController
