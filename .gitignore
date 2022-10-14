@@ -3,3 +3,5 @@
 *.xcworkspacedata
 .DS_Store
 *.js
+*/.idea/*
+*/out/*
