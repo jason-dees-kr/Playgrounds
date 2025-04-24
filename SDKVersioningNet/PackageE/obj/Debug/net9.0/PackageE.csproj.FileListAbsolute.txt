@@ -1,0 +1,16 @@
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/bin/Debug/net9.0/PackageE.deps.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/bin/Debug/net9.0/PackageE.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/bin/Debug/net9.0/PackageE.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/bin/Debug/net9.0/PackageInterfaces.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/bin/Debug/net9.0/PackageInterfaces.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.csproj.AssemblyReference.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.AssemblyInfoInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.AssemblyInfo.cs
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.csproj.CoreCompileInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.sourcelink.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.csproj.Up2Date
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/refint/PackageE.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/PackageE.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/obj/Debug/net9.0/ref/PackageE.dll

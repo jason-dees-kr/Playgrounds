@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "PackageA/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PackageInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PackageA.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PackageA.dll": {}
+        }
+      },
+      "PackageE/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PackageInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PackageE.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PackageE.dll": {}
+        }
+      },
+      "PackageF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/PackageF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PackageF.dll": {}
+        }
+      },
+      "PackageInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/PackageInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PackageInterfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PackageA/1.0.0": {
+      "type": "project",
+      "path": "../PackageA/PackageA.csproj",
+      "msbuildProject": "../PackageA/PackageA.csproj"
+    },
+    "PackageE/1.0.0": {
+      "type": "project",
+      "path": "../PackageE/PackageE.csproj",
+      "msbuildProject": "../PackageE/PackageE.csproj"
+    },
+    "PackageF/1.0.0": {
+      "type": "project",
+      "path": "../PackageF/PackageF.csproj",
+      "msbuildProject": "../PackageF/PackageF.csproj"
+    },
+    "PackageInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../PackageInterfaces/PackageInterfaces.csproj",
+      "msbuildProject": "../PackageInterfaces/PackageInterfaces.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "PackageA >= 1.0.0",
+      "PackageE >= 1.0.0",
+      "PackageF >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/jd26163/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/App/App.csproj",
+      "projectName": "App",
+      "projectPath": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/App/App.csproj",
+      "packagesPath": "/Users/jd26163/.nuget/packages/",
+      "outputPath": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/App/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/jd26163/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/PackageA.csproj": {
+              "projectPath": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/PackageA.csproj"
+            },
+            "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/PackageE.csproj": {
+              "projectPath": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageE/PackageE.csproj"
+            },
+            "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/PackageF.csproj": {
+              "projectPath": "/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/PackageF.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

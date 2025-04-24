@@ -1,0 +1,12 @@
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/bin/Debug/net9.0/PackageF.deps.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/bin/Debug/net9.0/PackageF.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/bin/Debug/net9.0/PackageF.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.AssemblyInfoInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.AssemblyInfo.cs
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.csproj.CoreCompileInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.sourcelink.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/refint/PackageF.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/PackageF.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageF/obj/Debug/net9.0/ref/PackageF.dll

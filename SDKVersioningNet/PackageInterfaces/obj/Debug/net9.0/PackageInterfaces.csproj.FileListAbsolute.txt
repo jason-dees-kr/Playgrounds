@@ -1,0 +1,12 @@
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/bin/Debug/net9.0/PackageInterfaces.deps.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/bin/Debug/net9.0/PackageInterfaces.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/bin/Debug/net9.0/PackageInterfaces.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.AssemblyInfoInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.AssemblyInfo.cs
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.csproj.CoreCompileInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.sourcelink.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/refint/PackageInterfaces.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/PackageInterfaces.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageInterfaces/obj/Debug/net9.0/ref/PackageInterfaces.dll

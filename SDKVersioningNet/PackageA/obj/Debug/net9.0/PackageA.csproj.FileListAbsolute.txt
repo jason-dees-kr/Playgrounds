@@ -1,0 +1,16 @@
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/bin/Debug/net9.0/PackageA.deps.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/bin/Debug/net9.0/PackageA.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/bin/Debug/net9.0/PackageA.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.AssemblyInfoInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.AssemblyInfo.cs
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.csproj.CoreCompileInputs.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.sourcelink.json
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/refint/PackageA.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/ref/PackageA.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/bin/Debug/net9.0/PackageInterfaces.dll
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/bin/Debug/net9.0/PackageInterfaces.pdb
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.csproj.AssemblyReference.cache
+/Users/jd26163/Projects/Playgrounds/SDKVersioningNet/PackageA/obj/Debug/net9.0/PackageA.csproj.Up2Date

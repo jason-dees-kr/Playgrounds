@@ -1,0 +1,86 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "App/1.0.0": {
+        "dependencies": {
+          "PackageA": "1.0.0",
+          "PackageE": "1.0.0",
+          "PackageF": "1.0.0"
+        },
+        "runtime": {
+          "App.dll": {}
+        }
+      },
+      "PackageA/1.0.0": {
+        "dependencies": {
+          "PackageInterfaces": "1.0.0"
+        },
+        "runtime": {
+          "PackageA.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PackageE/1.0.0": {
+        "dependencies": {
+          "PackageInterfaces": "1.0.0"
+        },
+        "runtime": {
+          "PackageE.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PackageF/1.0.0": {
+        "runtime": {
+          "PackageF.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PackageInterfaces/1.0.0": {
+        "runtime": {
+          "PackageInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackageA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackageE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackageF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackageInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

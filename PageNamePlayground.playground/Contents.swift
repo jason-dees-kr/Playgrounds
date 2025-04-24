@@ -11,7 +11,16 @@ var p = String(describing: pageName) // "khx:home:coupons"
 
 pageName.pop() // "coupons"
 
-pageName = PageName("health", "activity center") // "khx:home:activity-center"
+let starter = "health"
+pageName = PageName("health", "thx center") // "khx:health:activity-center"
+pageName += "weight bench" // "khx:health:activity-center:weight bench"
+
+pageName = PageName("coupons")
+
+// a-z0-9
+// lower cased
+// hyphens instead of spaces
+
 // could do other string processing
 pageName += "steps" // "khx:home:activity-center:steps"
 
