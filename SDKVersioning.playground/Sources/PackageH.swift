@@ -47,7 +47,7 @@ public class PackageH: BasePackage {
             public init(){}
         }
         public struct SubmitOrder_V1 {
-            public let version: String = "v1"
+            public let version: String = "v1.99.99"
             public init(){}
         }
         public struct ViewProduct_V2 {
@@ -91,6 +91,37 @@ public class PackageH: BasePackage {
             public let version: String = "v1.6.5"
             public init(){}
         }
+    }
+    
+    public class Krogerlytics {
         
+        public struct Product {
+            @available(*, deprecated)
+            public struct V1 {}
+            public struct V2 {}
+        }
+        
+        public struct Transaction{
+            @available(*, deprecated)
+            public struct V1 {
+                public let component: Component.V2
+            }
+            
+            @available(*, deprecated)
+            public struct V2 {
+                public let component: Component.V2
+            }
+            
+            public struct V3 {
+                public let component: Component.V3
+            }
+        }
+        
+        public struct Component {
+            @available(*, deprecated)
+            public struct V2 {}
+            
+            public struct V3 {}
+        }
     }
 }
