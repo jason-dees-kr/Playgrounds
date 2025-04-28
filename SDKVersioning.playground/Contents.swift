@@ -76,7 +76,7 @@ _ = {
     // No SDK Updates to add the VX support because default will always be the same version as 'latest', in this case AddToCart V3
     // We can create objects that equivalent (default and V3) that would help with the migration to just using versioned objects
     // We have to adjust version suffixes on breaking change SDK updates
-    // After enough breaking changes we'd be in PackageH, hopefully, if we can "train" producing teams 
+    // After enough breaking changes we'd be in PackageH, hopefully, if we can "train" producing teams
     let addToCartLatest = PackageG.Banner.AddToCart(product: PackageG.Banner.Product(),
                                                     search: PackageG.Banner.Search())
     let addToCartPrev = PackageG.Banner.AddToCart.V2(product: PackageG.Banner.Product(),
@@ -94,12 +94,12 @@ _ = {
     // We'd need to update every scenario with '_VX' (or '.VX' or whatever). This would require a migration plan of sorts, and tracking what has been done
     // We'd never have to go through and update the suffixes if we declare them during SDK updates
     
-    let addToCartLate = PackageH.Banner.AddToCart_V3(product_v1: PackageH.Banner.Product_V1(),
-                                                     search_v2: PackageH.Banner.Search_V2())
-    let addToCartPrev = PackageH.Banner.AddToCart_V2(product_v1: PackageH.Banner.Product_V1(),
-                                                     search_v1: PackageH.Banner.Search_V1())
+    let addToCartLate = PackageH.Banner.AddToCart_V3(product: PackageH.Banner.Product_V1(),
+                                                     search: PackageH.Banner.Search_V2())
+    let addToCartPrev = PackageH.Banner.AddToCart_V2(product: PackageH.Banner.Product_V1(),
+                                                     search: PackageH.Banner.Search_V1())
     print("----------------------")
     print(PackageH.name)
-    print(addToCartLate.version, addToCartLate.product_v1.version, addToCartLate.search_v2.version)
-    print(addToCartPrev.version, addToCartPrev.product_v1.version, addToCartPrev.search_v1.version)
+    print(addToCartLate.version, addToCartLate.product.version, addToCartLate.search.version)
+    print(addToCartPrev.version, addToCartPrev.product.version, addToCartPrev.search.version)
 }()
