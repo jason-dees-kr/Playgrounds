@@ -15,7 +15,7 @@ public class PackageH: BasePackage {
             // It will require custom serialization to keep consistency with consumers, so Im' not sure we need names AND types to be versioned
             // It's very explicit though
             
-            public let product: Product_V1;
+            public let product: Product_V1; // Or Product.V1
             public let search: Search_V2;
             public init(product: Product_V1, search: Search_V2) {
                 self.product = product
@@ -77,45 +77,45 @@ public class PackageH: BasePackage {
         
         public struct Search_V2 {
             public let version: String = "v2.0.1"
-        }
-        public init(){}
-    }
-    
-    @available(*, deprecated)
-    public struct Search_V1 {
-        public let version: String = "v1.6.5"
-        public init(){}
-    }
-}
-
-public class Krogerlytics {
-    
-    public struct Product {
-        @available(*, deprecated)
-        public struct V1 {}
-        public struct V2 {}
-    }
-    
-    public struct Transaction{
-        @available(*, deprecated)
-        public struct V1 {
-            public let component: Component.V2
+            public init(){}
         }
         
         @available(*, deprecated)
-        public struct V2 {
-            public let component: Component.V2
-        }
-        
-        public struct V3 {
-            public let component: Component.V3
+        public struct Search_V1 {
+            public let version: String = "v1.6.5"
+            public init(){}
         }
     }
     
-    public struct Component {
-        @available(*, deprecated)
-        public struct V2 {}
+    public class Krogerlytics {
         
-        public struct V3 {}
+        public struct Product {
+            @available(*, deprecated)
+            public struct V1 {}
+            public struct V2 {}
+        }
+        
+        public struct Transaction{
+            @available(*, deprecated)
+            public struct V1 {
+                public let component: Component.V2
+            }
+            
+            @available(*, deprecated)
+            public struct V2 {
+                public let component: Component.V2
+            }
+            
+            public struct V3 {
+                public let component: Component.V3
+            }
+        }
+        
+        public struct Component {
+            @available(*, deprecated)
+            public struct V2 {}
+            
+            public struct V3 {}
+        }
     }
 }
