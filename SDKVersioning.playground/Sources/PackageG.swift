@@ -1,24 +1,32 @@
 //
 //  Untitled.swift
-//  
+//
 //
 //  Created by Jason Dees on 2025/4/23.
 //
 
 public class PackageG: BasePackage {
-
+    
     public class Banner {
         public struct AddToCart {
             public let version: String = "v3.0.0"
             public let product: Product;
             public let search: Search;
+            @available(*, deprecated)
             public init(product: Product, search: Search) {
                 self.product = product
                 self.search = search
             }
             
-            public typealias V3 = AddToCart
-            
+            public struct V3{
+                public let version: String = "v3.0.0"
+                public let product: Product;
+                public let search: Search;
+                public init(product: Product, search: Search) {
+                    self.product = product
+                    self.search = search
+                }
+            }
             @available(*, deprecated)
             public struct V2 {
                 public let version: String = "v2.0.20"
